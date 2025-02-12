@@ -24,18 +24,3 @@ class BankAccount:
                 f"Balance: {self.current_balance}\n"
                 f"Minimum Balance:  {self.minimum_balance}"
                 f"Account Number: {self._account_number}")
-    
-cus1 = BankAccount("Bob", 100, 10)
-cus2 = BankAccount("Alice", 500, 100)
-
-print(cus1)
-print(cus2)
-
-cus1.deposit(100)
-cus2.withdraw(50)
-
-print(cus1)
-print(cus2)
-
-
-
