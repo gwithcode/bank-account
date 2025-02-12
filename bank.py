@@ -15,6 +15,9 @@ class BankAccount:
     def withdraw(self, balance):
         self.current_balance -= balance
 
+    def getRouting(self):
+        return self.__routing_number    #return routing number    
+
     def __str__(self):
         return (f"Bank: {BankAccount.title}\n"
                 f"Name: {self.customer_name}\n"
