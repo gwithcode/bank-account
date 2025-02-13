@@ -5,6 +5,7 @@ class CheckingAccount(BankAccount):
         super().__init__(customer_name, current_balance, minimum_balance, account_number, routing_number)
         self.limit = current_balance / 4
 
+    """This method allows the user to transfer money from one account to another. """
     def transfer(self, amount):
 
         if amount <= 0:
