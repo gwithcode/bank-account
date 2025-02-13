@@ -2,6 +2,7 @@ from checking import CheckingAccount
 from savings import savings
 
 def main():
+    """Creates 2 instances from each class and goes through a scenario"""
     checking = CheckingAccount("Kayd Chen", 100000, 1000, 12345, 54321)
     saving = savings("Kayd Chen", 100000, 1000, 12345, 54321)
     checking2 = CheckingAccount("Tyler Roth", 2000, 100, 6969, 9696)
@@ -19,7 +20,7 @@ def main():
     checking.transfer(5000)
     print("Current balance after transfer (Kayd Chen): ", checking.current_balance)
     print("Applying monthly interest to savings account (Kayd Chen).")
-    savings.monthy_interest(saving)
+    savings.monthly_interest(saving)
     print("Updated balance after interest (Kayd Chen): ", saving.current_balance)
 
 if __name__ == "__main__":
